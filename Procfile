@@ -1,1 +1,1 @@
-web: python Dash_App.py
+web: gunicorn app:server --timeout 300
