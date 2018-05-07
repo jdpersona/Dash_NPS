@@ -2,6 +2,10 @@
 Hello World app for running Python apps on Bluemix
 """
 
+"""
+Hello World app for running Python apps on Bluemix
+"""
+
 # Always prefer setuptools over distutils
 from setuptools import setup, find_packages
 # To use a consistent encoding
@@ -15,7 +19,7 @@ with open(path.join(here, 'README.md'), encoding='utf-8') as f:
     long_description = f.read()
 
 setup(
-    name='python-hello-world-flask',
+    name='hello-dash',
     version='1.0.0',
     description='Hello World app for running Python apps on Bluemix',
     long_description=long_description,
