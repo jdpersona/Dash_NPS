@@ -1,9 +1,11 @@
-# -*- coding: utf-8 -*-
-"""
-Spyder Editor
 
-This is a temporary script file.
-"""
+from cloudant import Cloudant
+from flask import Flask, render_template, request, jsonify
+import atexit
+import os
+import json
+
+
 
 import pandas as pd
 import numpy as np
