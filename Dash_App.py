@@ -17,7 +17,8 @@ import plotly.graph_objs as go
 
 daily_df = pd.read_csv("https://raw.githubusercontent.com/jdpersona/Dash_Apps/master/daily_df.csv")
 
-app = dash.Dash()
+app = dash.Dash(__name__)
+server = app.server
 
 app.layout = html.Div(className='container', children=[
     html.H1('NPS Changes Overtime'),
@@ -102,6 +103,7 @@ def update_graph(items):
 
 app.css.append_css({'external_url': 'https://codepen.io/chriddyp/pen/dZVMbK.css'})
 
+    
 if __name__ == '__main__':
-    app.run_server()
+    app.run_server(debug=True, threaded=True)
 
